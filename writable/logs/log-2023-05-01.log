@@ -1,0 +1,102 @@
+ERROR - 2023-05-01 08:16:18 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'cab-backend', 3306, '', 0)
+#1 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id`\nFRO...', Array, false)
+#4 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\app\Controllers\DriverAuthController.php(40): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(934): App\Controllers\DriverAuthController->loginMobile()
+#8 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+#9 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id`\nFRO...', Array, false)
+#3 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\app\Controllers\DriverAuthController.php(40): CodeIgniter\BaseModel->first()
+#6 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(934): App\Controllers\DriverAuthController->loginMobile()
+#7 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+#8 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-05-01 08:16:18 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id`
+FROM `roles`
+WHERE `name` LIKE :name: ESCAPE \'!\'
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\DriverAuthController.php(40): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->loginMobile()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-05-01 12:09:54 --> Call to undefined method App\Controllers\PageController::respondCreated()
+in APPPATH\Controllers\PageController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PageController->page('page_term')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PageController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-05-01 12:10:29 --> Call to undefined method App\Controllers\PageController::respondCreated()
+in APPPATH\Controllers\PageController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PageController->page('page_term')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PageController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-05-01 12:10:44 --> Call to undefined method App\Controllers\PageController::respondCreated()
+in APPPATH\Controllers\PageController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PageController->page('page_term')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PageController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-05-01 12:11:10 --> Call to undefined method App\Controllers\PageController::respondCreated()
+in APPPATH\Controllers\PageController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PageController->page('page_term')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PageController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-05-01 13:03:52 --> Call to undefined method App\Controllers\PageController::respondCreated()
+in APPPATH\Controllers\PageController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PageController->page('page_term')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PageController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-05-01 13:04:27 --> Call to undefined method App\Controllers\PageController::respondCreated()
+in APPPATH\Controllers\PageController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PageController->page('page_term')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PageController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-05-01 13:06:19 --> Call to undefined function App\Controllers\getResult()
+in APPPATH\Controllers\PageController.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PageController->page('page_term')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PageController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-05-01 13:06:31 --> Call to undefined method App\Controllers\PageController::respondCreated()
+in APPPATH\Controllers\PageController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PageController->page('page_term')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PageController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')

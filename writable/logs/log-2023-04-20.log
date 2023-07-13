@@ -1,0 +1,18 @@
+CRITICAL - 2023-04-20 13:28:30 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(226): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(190): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+ERROR - 2023-04-20 13:19:57 --> mysqli_sql_exception: Table 'cab-api.user' doesn't exist in D:\xampp\htdocs\cab-api\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\cab-api\system\Database\MySQLi\Connection.php(295): mysqli->query('TRUNCATE `user`', 0)
+#1 D:\xampp\htdocs\cab-api\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('TRUNCATE `user`')
+#2 D:\xampp\htdocs\cab-api\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('TRUNCATE `user`')
+#3 D:\xampp\htdocs\cab-api\system\Database\BaseBuilder.php(2721): CodeIgniter\Database\BaseConnection->query('TRUNCATE `user`', NULL, false)
+#4 D:\xampp\htdocs\cab-api\app\Database\Seeds\UserSeeder.php(12): CodeIgniter\Database\BaseBuilder->truncate()
+#5 D:\xampp\htdocs\cab-api\system\Database\Seeder.php(146): App\Database\Seeds\UserSeeder->run()
+#6 D:\xampp\htdocs\cab-api\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#7 D:\xampp\htdocs\cab-api\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#8 D:\xampp\htdocs\cab-api\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#9 D:\xampp\htdocs\cab-api\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}

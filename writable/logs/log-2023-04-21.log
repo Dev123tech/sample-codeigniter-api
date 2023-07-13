@@ -1,0 +1,385 @@
+CRITICAL - 2023-04-21 10:15:15 --> Undefined property: App\Controllers\CustomerAuthController::$input
+in APPPATH\Controllers\CustomerAuthController.php on line 18.
+ 1 APPPATH\Controllers\CustomerAuthController.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\CustomerAuthController::$input', 'D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\app\\Controllers\\CustomerAuthController.php', 18)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CustomerAuthController->loginMobile()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerAuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 10:15:32 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
+in APPPATH\Controllers\CustomerAuthController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CustomerAuthController->loginMobile()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerAuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 10:15:37 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::all()
+in APPPATH\Controllers\CustomerAuthController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CustomerAuthController->loginMobile()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerAuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 10:15:38 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::all()
+in APPPATH\Controllers\CustomerAuthController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CustomerAuthController->loginMobile()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerAuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 10:15:49 --> Call to undefined method App\Controllers\CustomerAuthController::request()
+in APPPATH\Controllers\CustomerAuthController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CustomerAuthController->loginMobile()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerAuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 10:15:58 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::mobile()
+in APPPATH\Controllers\CustomerAuthController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CustomerAuthController->loginMobile()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerAuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 10:16:41 --> Undefined variable $request
+in APPPATH\Controllers\CustomerAuthController.php on line 18.
+ 1 APPPATH\Controllers\CustomerAuthController.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\app\\Controllers\\CustomerAuthController.php', 18)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CustomerAuthController->loginMobile()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerAuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 10:16:54 --> Array callback must have exactly two elements
+in APPPATH\Controllers\CustomerAuthController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CustomerAuthController->loginMobile()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerAuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 10:35:29 --> Object of class CodeIgniter\Validation\Validation could not be converted to string
+in APPPATH\Controllers\CustomerAuthController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CustomerAuthController->loginMobile()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerAuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 10:39:49 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\CustomerAuthController.php on line 29.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\app\\Controllers\\CustomerAuthController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CustomerAuthController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CustomerAuthController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\CustomerAuthController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 10:40:16 --> Object of class CodeIgniter\Validation\Validation could not be converted to string
+in APPPATH\Controllers\CustomerAuthController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CustomerAuthController->loginMobile()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerAuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 10:40:33 --> Object of class CodeIgniter\Validation\Validation could not be converted to string
+in APPPATH\Controllers\CustomerAuthController.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CustomerAuthController->loginMobile()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerAuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 10:44:57 --> Object of class CodeIgniter\Validation\Validation could not be converted to string
+in APPPATH\Controllers\CustomerAuthController.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CustomerAuthController->loginMobile()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerAuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 11:04:14 --> Call to undefined method App\Models\Users::firstAll
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\CustomerAuthController.php(28): CodeIgniter\Model->__call('firstAll', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CustomerAuthController->loginMobile()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerAuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 12:56:45 --> "email" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 320.
+ 1 SYSTEMPATH\Validation\Validation.php(320): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('email')
+ 2 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'demo@gmail.com', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\CustomerAuthController.php(47): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CustomerAuthController->registerCustomer()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerAuthController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 12:57:20 --> "email" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 320.
+ 1 SYSTEMPATH\Validation\Validation.php(320): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('email')
+ 2 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'demo@gmail.com', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\CustomerAuthController.php(47): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CustomerAuthController->registerCustomer()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerAuthController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 13:11:42 --> syntax error, unexpected token "}", expecting identifier or variable or "{" or "$"
+in APPPATH\Controllers\CustomerAuthController.php on line 73.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\app\\Controllers\\CustomerAuthController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CustomerAuthController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CustomerAuthController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\CustomerAuthController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 13:12:08 --> syntax error, unexpected token "}", expecting identifier or variable or "{" or "$"
+in APPPATH\Controllers\CustomerAuthController.php on line 73.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\app\\Controllers\\CustomerAuthController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CustomerAuthController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CustomerAuthController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\CustomerAuthController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 13:12:18 --> syntax error, unexpected token "}", expecting identifier or variable or "{" or "$"
+in APPPATH\Controllers\CustomerAuthController.php on line 73.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\app\\Controllers\\CustomerAuthController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CustomerAuthController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CustomerAuthController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\CustomerAuthController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 13:12:20 --> syntax error, unexpected token "}", expecting identifier or variable or "{" or "$"
+in APPPATH\Controllers\CustomerAuthController.php on line 73.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\app\\Controllers\\CustomerAuthController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CustomerAuthController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CustomerAuthController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\CustomerAuthController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 13:12:28 --> syntax error, unexpected token "}", expecting identifier or variable or "{" or "$"
+in APPPATH\Controllers\CustomerAuthController.php on line 73.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\app\\Controllers\\CustomerAuthController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CustomerAuthController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CustomerAuthController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\CustomerAuthController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 13:17:15 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 762.
+ 1 SYSTEMPATH\BaseModel.php(762): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\CustomerAuthController.php(65): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CustomerAuthController->registerCustomer()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerAuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 13:27:35 --> Undefined variable $userExist
+in APPPATH\Controllers\CustomerAuthController.php on line 70.
+ 1 APPPATH\Controllers\CustomerAuthController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userExist', 'D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\app\\Controllers\\CustomerAuthController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CustomerAuthController->registerCustomer()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerAuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 14:06:01 --> Undefined variable $request
+in APPPATH\Controllers\JWTController.php on line 37.
+ 1 APPPATH\Controllers\JWTController.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\app\\Controllers\\JWTController.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JWTController->refreshToken()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JWTController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 14:06:15 --> Call to a member function getValue() on null
+in APPPATH\Controllers\JWTController.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JWTController->refreshToken()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JWTController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 14:08:28 --> Call to a member function getValue() on array
+in APPPATH\Controllers\JWTController.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JWTController->refreshToken()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JWTController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 14:08:31 --> Call to a member function getValue() on array
+in APPPATH\Controllers\JWTController.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JWTController->refreshToken()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JWTController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 14:09:55 --> Call to a member function getValue() on array
+in APPPATH\Controllers\JWTController.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JWTController->refreshToken()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JWTController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 14:10:43 --> Undefined variable $request
+in APPPATH\Controllers\JWTController.php on line 37.
+ 1 APPPATH\Controllers\JWTController.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\app\\Controllers\\JWTController.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JWTController->refreshToken()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JWTController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 14:11:01 --> Too few arguments to function App\Controllers\JWTController::refreshToken(), 0 passed in D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\JWTController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JWTController->refreshToken()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JWTController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 14:11:42 --> Too few arguments to function App\Controllers\JWTController::refreshToken(), 0 passed in D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\JWTController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JWTController->refreshToken()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JWTController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 14:11:43 --> Too few arguments to function App\Controllers\JWTController::refreshToken(), 0 passed in D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\JWTController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JWTController->refreshToken()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JWTController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 14:13:46 --> Wrong number of segments
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 103.
+ 1 APPPATH\Controllers\JWTController.php(40): Firebase\JWT\JWT::decode(' d6WfhmisSBWmx5Xqx1FfSC:APA91bGuyTh8Jfp7-eDSZDZIeAS3Dryf8t8B6Q6VD0Ah867_gv2kEDp1ex7Ame5BQ5M6bc_lKUx2eDBPFOO0P08kGIM2lDCn-eAmPNd7S48tjU62gEuqdATg8ONY3DpPken165lK4UdI', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JWTController->refreshToken()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JWTController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 14:13:48 --> Wrong number of segments
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 103.
+ 1 APPPATH\Controllers\JWTController.php(40): Firebase\JWT\JWT::decode(' d6WfhmisSBWmx5Xqx1FfSC:APA91bGuyTh8Jfp7-eDSZDZIeAS3Dryf8t8B6Q6VD0Ah867_gv2kEDp1ex7Ame5BQ5M6bc_lKUx2eDBPFOO0P08kGIM2lDCn-eAmPNd7S48tjU62gEuqdATg8ONY3DpPken165lK4UdI', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JWTController->refreshToken()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JWTController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 14:14:44 --> Wrong number of segments
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 103.
+ 1 APPPATH\Controllers\JWTController.php(40): Firebase\JWT\JWT::decode(' d6WfhmisSBWmx5Xqx1FfSC:APA91bGuyTh8Jfp7-eDSZDZIeAS3Dryf8t8B6Q6VD0Ah867_gv2kEDp1ex7Ame5BQ5M6bc_lKUx2eDBPFOO0P08kGIM2lDCn-eAmPNd7S48tjU62gEuqdATg8ONY3DpPken165lK4UdI', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JWTController->refreshToken()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JWTController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 14:15:34 --> Wrong number of segments
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 103.
+ 1 APPPATH\Controllers\JWTController.php(40): Firebase\JWT\JWT::decode(' d6WfhmisSBWmx5Xqx1FfSC:APA91bGuyTh8Jfp7-eDSZDZIeAS3Dryf8t8B6Q6VD0Ah867_gv2kEDp1ex7Ame5BQ5M6bc_lKUx2eDBPFOO0P08kGIM2lDCn-eAmPNd7S48tjU62gEuqdATg8ONY3DpPken165lK4UdI', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JWTController->refreshToken()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JWTController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 14:16:53 --> Wrong number of segments
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 103.
+ 1 APPPATH\Controllers\JWTController.php(42): Firebase\JWT\JWT::decode('Bearer d6WfhmisSBWmx5Xqx1FfSC:APA91bGuyTh8Jfp7-eDSZDZIeAS3Dryf8t8B6Q6VD0Ah867_gv2kEDp1ex7Ame5BQ5M6bc_lKUx2eDBPFOO0P08kGIM2lDCn-eAmPNd7S48tjU62gEuqdATg8ONY3DpPken165lK4UdI', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JWTController->refreshToken()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JWTController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 14:16:56 --> Wrong number of segments
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 103.
+ 1 APPPATH\Controllers\JWTController.php(42): Firebase\JWT\JWT::decode('Bearer d6WfhmisSBWmx5Xqx1FfSC:APA91bGuyTh8Jfp7-eDSZDZIeAS3Dryf8t8B6Q6VD0Ah867_gv2kEDp1ex7Ame5BQ5M6bc_lKUx2eDBPFOO0P08kGIM2lDCn-eAmPNd7S48tjU62gEuqdATg8ONY3DpPken165lK4UdI', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JWTController->refreshToken()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JWTController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 14:17:29 --> Wrong number of segments
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 103.
+ 1 APPPATH\Controllers\JWTController.php(42): Firebase\JWT\JWT::decode('Bearer d6WfhmisSBWmx5Xqx1FfSC:APA91bGuyTh8Jfp7-eDSZDZIeAS3Dryf8t8B6Q6VD0Ah867_gv2kEDp1ex7Ame5BQ5M6bc_lKUx2eDBPFOO0P08kGIM2lDCn-eAmPNd7S48tjU62gEuqdATg8ONY3DpPken165lK4UdI', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JWTController->refreshToken()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JWTController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 14:17:30 --> Wrong number of segments
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 103.
+ 1 APPPATH\Controllers\JWTController.php(42): Firebase\JWT\JWT::decode('Bearer d6WfhmisSBWmx5Xqx1FfSC:APA91bGuyTh8Jfp7-eDSZDZIeAS3Dryf8t8B6Q6VD0Ah867_gv2kEDp1ex7Ame5BQ5M6bc_lKUx2eDBPFOO0P08kGIM2lDCn-eAmPNd7S48tjU62gEuqdATg8ONY3DpPken165lK4UdI', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JWTController->refreshToken()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JWTController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 14:19:09 --> Wrong number of segments
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 103.
+ 1 APPPATH\Controllers\JWTController.php(43): Firebase\JWT\JWT::decode('d6WfhmisSBWmx5Xqx1FfSC:APA91bGuyTh8Jfp7-eDSZDZIeAS3Dryf8t8B6Q6VD0Ah867_gv2kEDp1ex7Ame5BQ5M6bc_lKUx2eDBPFOO0P08kGIM2lDCn-eAmPNd7S48tjU62gEuqdATg8ONY3DpPken165lK4UdI', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JWTController->refreshToken()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JWTController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 14:19:10 --> Wrong number of segments
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 103.
+ 1 APPPATH\Controllers\JWTController.php(43): Firebase\JWT\JWT::decode('d6WfhmisSBWmx5Xqx1FfSC:APA91bGuyTh8Jfp7-eDSZDZIeAS3Dryf8t8B6Q6VD0Ah867_gv2kEDp1ex7Ame5BQ5M6bc_lKUx2eDBPFOO0P08kGIM2lDCn-eAmPNd7S48tjU62gEuqdATg8ONY3DpPken165lK4UdI', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JWTController->refreshToken()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JWTController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 14:19:12 --> Wrong number of segments
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 103.
+ 1 APPPATH\Controllers\JWTController.php(43): Firebase\JWT\JWT::decode('d6WfhmisSBWmx5Xqx1FfSC:APA91bGuyTh8Jfp7-eDSZDZIeAS3Dryf8t8B6Q6VD0Ah867_gv2kEDp1ex7Ame5BQ5M6bc_lKUx2eDBPFOO0P08kGIM2lDCn-eAmPNd7S48tjU62gEuqdATg8ONY3DpPken165lK4UdI', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JWTController->refreshToken()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JWTController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 14:20:31 --> Undefined variable $userData
+in APPPATH\Controllers\JWTController.php on line 42.
+ 1 APPPATH\Controllers\JWTController.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userData', 'D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\app\\Controllers\\JWTController.php', 42)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JWTController->refreshToken()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JWTController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 14:20:32 --> Undefined variable $userData
+in APPPATH\Controllers\JWTController.php on line 42.
+ 1 APPPATH\Controllers\JWTController.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userData', 'D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\app\\Controllers\\JWTController.php', 42)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JWTController->refreshToken()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JWTController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 14:20:33 --> Undefined variable $userData
+in APPPATH\Controllers\JWTController.php on line 42.
+ 1 APPPATH\Controllers\JWTController.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userData', 'D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\app\\Controllers\\JWTController.php', 42)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JWTController->refreshToken()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JWTController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 14:25:43 --> Array callback must have exactly two elements
+in APPPATH\Controllers\JWTController.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JWTController->refreshToken()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JWTController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-21 14:25:45 --> Array callback must have exactly two elements
+in APPPATH\Controllers\JWTController.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JWTController->refreshToken()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JWTController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')

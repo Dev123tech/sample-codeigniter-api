@@ -1,0 +1,213 @@
+CRITICAL - 2023-04-25 08:26:08 --> finfo_file(D:\xampp\tmp\php60F0.tmp): Failed to open stream: No such file or directory
+in SYSTEMPATH\Files\File.php on line 115.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(D:\\xampp\\tmp\\php60F0.tmp): Failed to open stream: No such file or directory', 'D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\system\\Files\\File.php', 115)
+ 2 SYSTEMPATH\Files\File.php(115): finfo_file(resource (file_info), 'D:\\xampp\\tmp\\php60F0.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(302): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(291): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Files\File.php(127): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 APPPATH\Controllers\DriverAuthController.php(338): CodeIgniter\Files\File->getRandomName()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->updateSelfiDetails()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-25 08:26:08 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\API\ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\API\ResponseTrait.php(101): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+【Previous Exception】
+ErrorException
+finfo_file(D:\xampp\tmp\php60F0.tmp): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(D:\\x...', 'D:\\xampp\\htdocs...', 115)
+#1 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Files\File.php(115): finfo_file(Resource id #184, 'D:\\xampp\\tmp\\ph...')
+#2 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\HTTP\Files\UploadedFile.php(302): CodeIgniter\Files\File->getMimeType()
+#3 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\HTTP\Files\UploadedFile.php(291): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+#4 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Files\File.php(127): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+#5 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\app\Controllers\DriverAuthController.php(338): CodeIgniter\Files\File->getRandomName()
+#6 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(934): App\Controllers\DriverAuthController->updateSelfiDetails()
+#7 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+#8 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-04-25 08:31:34 --> finfo_file(D:\xampp\tmp\php598C.tmp): Failed to open stream: No such file or directory
+in SYSTEMPATH\Files\File.php on line 115.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(D:\\xampp\\tmp\\php598C.tmp): Failed to open stream: No such file or directory', 'D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\system\\Files\\File.php', 115)
+ 2 SYSTEMPATH\Files\File.php(115): finfo_file(resource (file_info), 'D:\\xampp\\tmp\\php598C.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(302): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(291): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Files\File.php(127): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 APPPATH\Controllers\DriverAuthController.php(338): CodeIgniter\Files\File->getRandomName()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->updateSelfiDetails()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-25 08:31:34 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\API\ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\API\ResponseTrait.php(101): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+【Previous Exception】
+ErrorException
+finfo_file(D:\xampp\tmp\php598C.tmp): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(D:\\x...', 'D:\\xampp\\htdocs...', 115)
+#1 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Files\File.php(115): finfo_file(Resource id #183, 'D:\\xampp\\tmp\\ph...')
+#2 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\HTTP\Files\UploadedFile.php(302): CodeIgniter\Files\File->getMimeType()
+#3 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\HTTP\Files\UploadedFile.php(291): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+#4 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Files\File.php(127): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+#5 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\app\Controllers\DriverAuthController.php(338): CodeIgniter\Files\File->getRandomName()
+#6 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(934): App\Controllers\DriverAuthController->updateSelfiDetails()
+#7 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+#8 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-04-25 08:46:55 --> syntax error, unexpected variable "$userModel", expecting "function" or "const"
+in APPPATH\Controllers\DriverAuthController.php on line 361.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\app\\Controllers\\DriverAuthController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DriverAuthController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DriverAuthController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\DriverAuthController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-25 10:19:17 --> Call to a member function insert() on array
+in APPPATH\Controllers\DriverAuthController.php on line 273.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->updateSelfiDetails()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-25 10:30:53 --> Undefined array key "document_name"
+in APPPATH\Controllers\DriverAuthController.php on line 319.
+ 1 APPPATH\Controllers\DriverAuthController.php(319): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "document_name"', 'D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\app\\Controllers\\DriverAuthController.php', 319)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->updateSelfiDetails()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-25 10:31:34 --> Undefined array key "document_name"
+in APPPATH\Controllers\DriverAuthController.php on line 319.
+ 1 APPPATH\Controllers\DriverAuthController.php(319): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "document_name"', 'D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\app\\Controllers\\DriverAuthController.php', 319)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->updateSelfiDetails()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-25 10:31:36 --> Undefined array key "document_name"
+in APPPATH\Controllers\DriverAuthController.php on line 319.
+ 1 APPPATH\Controllers\DriverAuthController.php(319): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "document_name"', 'D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\app\\Controllers\\DriverAuthController.php', 319)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->updateSelfiDetails()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-25 10:34:36 --> Cannot use object of type App\Models\DriverDocuments as array
+in APPPATH\Controllers\DriverAuthController.php on line 325.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->updateSelfiDetails()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-25 10:35:28 --> Cannot use object of type App\Models\DriverDocuments as array
+in APPPATH\Controllers\DriverAuthController.php on line 324.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->updateSelfiDetails()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-25 10:46:13 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\DriverAuthController.php on line 301.
+ 1 APPPATH\Controllers\DriverAuthController.php(301): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\app\\Controllers\\DriverAuthController.php', 301)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->updateSelfiDetails()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-25 11:38:10 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\DriverAuthController.php(457): CodeIgniter\Model->update('2738', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->updateDrivingLicense()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-25 11:38:10 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\API\ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\API\ResponseTrait.php(101): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DataException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DataException
+There is no data to update.
+#0 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#2 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\app\Controllers\DriverAuthController.php(457): CodeIgniter\Model->update('2738', Array)
+#3 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(934): App\Controllers\DriverAuthController->updateDrivingLicense()
+#4 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+#5 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-04-25 11:38:59 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\DriverAuthController.php(457): CodeIgniter\Model->update('2738', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->updateDrivingLicense()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-25 11:38:59 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\API\ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\API\ResponseTrait.php(101): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DataException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DataException
+There is no data to update.
+#0 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#2 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\app\Controllers\DriverAuthController.php(457): CodeIgniter\Model->update('2738', Array)
+#3 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(934): App\Controllers\DriverAuthController->updateDrivingLicense()
+#4 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+#5 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-04-25 11:59:38 --> Cannot use empty array elements in arrays
+in APPPATH\Controllers\DriverAuthController.php on line 479.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-04-25 11:59:54 --> Cannot use empty array elements in arrays
+in APPPATH\Controllers\DriverAuthController.php on line 479.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

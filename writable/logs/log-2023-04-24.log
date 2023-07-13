@@ -1,0 +1,858 @@
+ERROR - 2023-04-24 06:18:59 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'cab-backend', 3306, '', 0)
+#1 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\app\Controllers\CustomerAuthController.php(29): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(934): App\Controllers\CustomerAuthController->loginMobile()
+#8 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerAuthController))
+#9 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\app\Controllers\CustomerAuthController.php(29): CodeIgniter\BaseModel->first()
+#6 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(934): App\Controllers\CustomerAuthController->loginMobile()
+#7 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerAuthController))
+#8 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-24 06:18:59 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ypc_users`
+WHERE `mobile` = :mobile:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\CustomerAuthController.php(29): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CustomerAuthController->loginMobile()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerAuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-24 06:32:22 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\JWTController.php on line 41.
+ 1 APPPATH\Controllers\JWTController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\app\\Controllers\\JWTController.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JWTController->refreshToken()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JWTController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+ERROR - 2023-04-24 08:46:52 --> mysqli_sql_exception: Duplicate entry 'demo@gmail.com' for key 'users_email_unique' in D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `yp...', 0)
+#1 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `yp...')
+#2 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `yp...')
+#3 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `yp...', Array, false)
+#4 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\app\Controllers\DriverAuthController.php(65): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(934): App\Controllers\DriverAuthController->registerDriver()
+#9 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+#10 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-04-24 08:46:52 --> Duplicate entry 'demo@gmail.com' for key 'users_email_unique'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567899\', \'demo@gmail.com\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567899\', \'demo@gmail.com\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567899\', \'demo@gmail.com\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (:first_name:, :mobile:, :email:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DriverAuthController.php(65): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->registerDriver()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+ERROR - 2023-04-24 08:49:13 --> mysqli_sql_exception: Duplicate entry 'demo@gmail.com' for key 'users_email_unique' in D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `yp...', 0)
+#1 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `yp...')
+#2 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `yp...')
+#3 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `yp...', Array, false)
+#4 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\app\Controllers\DriverAuthController.php(84): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(934): App\Controllers\DriverAuthController->registerDriver()
+#9 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+#10 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-04-24 08:49:13 --> Duplicate entry 'demo@gmail.com' for key 'users_email_unique'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567899\', \'demo@gmail.com\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567899\', \'demo@gmail.com\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567899\', \'demo@gmail.com\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (:first_name:, :mobile:, :email:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DriverAuthController.php(84): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->registerDriver()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+ERROR - 2023-04-24 08:49:14 --> mysqli_sql_exception: Duplicate entry 'demo@gmail.com' for key 'users_email_unique' in D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `yp...', 0)
+#1 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `yp...')
+#2 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `yp...')
+#3 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `yp...', Array, false)
+#4 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\app\Controllers\DriverAuthController.php(84): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(934): App\Controllers\DriverAuthController->registerDriver()
+#9 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+#10 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-04-24 08:49:14 --> Duplicate entry 'demo@gmail.com' for key 'users_email_unique'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567899\', \'demo@gmail.com\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567899\', \'demo@gmail.com\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567899\', \'demo@gmail.com\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (:first_name:, :mobile:, :email:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DriverAuthController.php(84): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->registerDriver()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+ERROR - 2023-04-24 08:49:20 --> mysqli_sql_exception: Duplicate entry 'demo@gmail.com' for key 'users_email_unique' in D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `yp...', 0)
+#1 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `yp...')
+#2 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `yp...')
+#3 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `yp...', Array, false)
+#4 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\app\Controllers\DriverAuthController.php(84): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(934): App\Controllers\DriverAuthController->registerDriver()
+#9 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+#10 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-04-24 08:49:20 --> Duplicate entry 'demo@gmail.com' for key 'users_email_unique'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567899\', \'demo@gmail.com\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567899\', \'demo@gmail.com\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567899\', \'demo@gmail.com\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (:first_name:, :mobile:, :email:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DriverAuthController.php(84): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->registerDriver()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-24 09:00:31 --> Class "App\Role" not found
+in APPPATH\Controllers\DriverAuthController.php on line 78.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->registerDriver()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-24 09:03:04 --> Call to undefined method App\Models\Roles::where()
+in APPPATH\Controllers\DriverAuthController.php on line 78.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->registerDriver()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+ERROR - 2023-04-24 09:14:20 --> mysqli_sql_exception: Duplicate entry '' for key 'users_email_unique' in D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `yp...', 0)
+#1 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `yp...')
+#2 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `yp...')
+#3 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `yp...', Array, false)
+#4 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\app\Controllers\DriverAuthController.php(89): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(934): App\Controllers\DriverAuthController->registerDriver()
+#9 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+#10 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-04-24 09:14:20 --> Duplicate entry '' for key 'users_email_unique'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (:first_name:, :mobile:, :email:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DriverAuthController.php(89): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->registerDriver()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+ERROR - 2023-04-24 09:14:31 --> mysqli_sql_exception: Duplicate entry '' for key 'users_email_unique' in D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `yp...', 0)
+#1 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `yp...')
+#2 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `yp...')
+#3 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `yp...', Array, false)
+#4 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\app\Controllers\DriverAuthController.php(89): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(934): App\Controllers\DriverAuthController->registerDriver()
+#9 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+#10 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-04-24 09:14:31 --> Duplicate entry '' for key 'users_email_unique'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (:first_name:, :mobile:, :email:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DriverAuthController.php(89): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->registerDriver()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+ERROR - 2023-04-24 09:17:25 --> mysqli_sql_exception: Duplicate entry '' for key 'users_email_unique' in D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `yp...', 0)
+#1 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `yp...')
+#2 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `yp...')
+#3 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `yp...', Array, false)
+#4 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\app\Controllers\DriverAuthController.php(89): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(934): App\Controllers\DriverAuthController->registerDriver()
+#9 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+#10 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-04-24 09:17:25 --> Duplicate entry '' for key 'users_email_unique'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (:first_name:, :mobile:, :email:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DriverAuthController.php(89): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->registerDriver()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+ERROR - 2023-04-24 09:17:51 --> mysqli_sql_exception: Duplicate entry '' for key 'users_email_unique' in D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `yp...', 0)
+#1 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `yp...')
+#2 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `yp...')
+#3 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `yp...', Array, false)
+#4 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\app\Controllers\DriverAuthController.php(89): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(934): App\Controllers\DriverAuthController->registerDriver()
+#9 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+#10 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-04-24 09:17:51 --> Duplicate entry '' for key 'users_email_unique'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (:first_name:, :mobile:, :email:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DriverAuthController.php(89): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->registerDriver()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+ERROR - 2023-04-24 09:18:34 --> mysqli_sql_exception: Duplicate entry '' for key 'users_email_unique' in D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `yp...', 0)
+#1 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `yp...')
+#2 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `yp...')
+#3 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `yp...', Array, false)
+#4 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\app\Controllers\DriverAuthController.php(90): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(934): App\Controllers\DriverAuthController->registerDriver()
+#9 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+#10 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-04-24 09:18:34 --> Duplicate entry '' for key 'users_email_unique'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (:first_name:, :mobile:, :email:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DriverAuthController.php(90): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->registerDriver()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+ERROR - 2023-04-24 09:18:37 --> mysqli_sql_exception: Duplicate entry '' for key 'users_email_unique' in D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `yp...', 0)
+#1 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `yp...')
+#2 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `yp...')
+#3 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `yp...', Array, false)
+#4 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\app\Controllers\DriverAuthController.php(90): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(934): App\Controllers\DriverAuthController->registerDriver()
+#9 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+#10 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-04-24 09:18:37 --> Duplicate entry '' for key 'users_email_unique'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (:first_name:, :mobile:, :email:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DriverAuthController.php(90): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->registerDriver()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+ERROR - 2023-04-24 09:18:46 --> mysqli_sql_exception: Duplicate entry '' for key 'users_email_unique' in D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `yp...', 0)
+#1 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `yp...')
+#2 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `yp...')
+#3 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `yp...', Array, false)
+#4 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\app\Controllers\DriverAuthController.php(90): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(934): App\Controllers\DriverAuthController->registerDriver()
+#9 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+#10 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-04-24 09:18:46 --> Duplicate entry '' for key 'users_email_unique'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (:first_name:, :mobile:, :email:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DriverAuthController.php(90): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->registerDriver()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+ERROR - 2023-04-24 09:19:07 --> mysqli_sql_exception: Duplicate entry '' for key 'users_email_unique' in D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `yp...', 0)
+#1 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `yp...')
+#2 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `yp...')
+#3 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `yp...', Array, false)
+#4 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\app\Controllers\DriverAuthController.php(92): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(934): App\Controllers\DriverAuthController->registerDriver()
+#9 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+#10 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-04-24 09:19:07 --> Duplicate entry '' for key 'users_email_unique'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (:first_name:, :mobile:, :email:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DriverAuthController.php(92): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->registerDriver()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+ERROR - 2023-04-24 09:19:57 --> mysqli_sql_exception: Duplicate entry '' for key 'users_email_unique' in D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `yp...', 0)
+#1 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `yp...')
+#2 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `yp...')
+#3 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `yp...', Array, false)
+#4 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\app\Controllers\DriverAuthController.php(92): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(934): App\Controllers\DriverAuthController->registerDriver()
+#9 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+#10 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-04-24 09:19:57 --> Duplicate entry '' for key 'users_email_unique'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (:first_name:, :mobile:, :email:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DriverAuthController.php(92): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->registerDriver()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+ERROR - 2023-04-24 09:20:24 --> mysqli_sql_exception: Duplicate entry '' for key 'users_email_unique' in D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `yp...', 0)
+#1 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `yp...')
+#2 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `yp...')
+#3 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `yp...', Array, false)
+#4 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\app\Controllers\DriverAuthController.php(92): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(934): App\Controllers\DriverAuthController->registerDriver()
+#9 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+#10 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-04-24 09:20:24 --> Duplicate entry '' for key 'users_email_unique'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (:first_name:, :mobile:, :email:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DriverAuthController.php(92): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->registerDriver()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+ERROR - 2023-04-24 09:22:48 --> mysqli_sql_exception: Duplicate entry '' for key 'users_email_unique' in D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `yp...', 0)
+#1 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `yp...')
+#2 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `yp...')
+#3 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `yp...', Array, false)
+#4 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\app\Controllers\DriverAuthController.php(92): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(934): App\Controllers\DriverAuthController->registerDriver()
+#9 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+#10 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-04-24 09:22:48 --> Duplicate entry '' for key 'users_email_unique'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (:first_name:, :mobile:, :email:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DriverAuthController.php(92): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->registerDriver()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+ERROR - 2023-04-24 09:23:30 --> mysqli_sql_exception: Duplicate entry '' for key 'users_email_unique' in D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `yp...', 0)
+#1 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `yp...')
+#2 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `yp...')
+#3 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `yp...', Array, false)
+#4 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\app\Controllers\DriverAuthController.php(92): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(934): App\Controllers\DriverAuthController->registerDriver()
+#9 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+#10 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-04-24 09:23:30 --> Duplicate entry '' for key 'users_email_unique'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (\'test\', \'+911234567898\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ypc_users` (`first_name`, `mobile`, `email`) VALUES (:first_name:, :mobile:, :email:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DriverAuthController.php(92): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->registerDriver()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-24 09:35:32 --> Array to string conversion
+in SYSTEMPATH\Database\Query.php on line 329.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\system\\Database\\Query.php', 329)
+ 2 SYSTEMPATH\Database\Query.php(329): implode(',', [...])
+ 3 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT *
+FROM `ypc_users`
+WHERE `mobile` = :mobile:
+AND `role_id` = :role_id:
+ LIMIT 1', [...])
+ 4 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 5 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\Query->getQuery()
+ 6 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ypc_users`
+WHERE `mobile` = :mobile:
+AND `role_id` = :role_id:
+ LIMIT 1', [...], false)
+ 7 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 8 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 9 APPPATH\Controllers\CustomerAuthController.php(35): CodeIgniter\BaseModel->first()
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CustomerAuthController->loginMobile()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerAuthController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-24 09:35:35 --> Array to string conversion
+in SYSTEMPATH\Database\Query.php on line 329.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\system\\Database\\Query.php', 329)
+ 2 SYSTEMPATH\Database\Query.php(329): implode(',', [...])
+ 3 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT *
+FROM `ypc_users`
+WHERE `mobile` = :mobile:
+AND `role_id` = :role_id:
+ LIMIT 1', [...])
+ 4 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 5 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\Query->getQuery()
+ 6 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ypc_users`
+WHERE `mobile` = :mobile:
+AND `role_id` = :role_id:
+ LIMIT 1', [...], false)
+ 7 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 8 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 9 APPPATH\Controllers\CustomerAuthController.php(35): CodeIgniter\BaseModel->first()
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CustomerAuthController->loginMobile()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerAuthController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-24 09:36:04 --> Undefined array key "id"
+in APPPATH\Controllers\CustomerAuthController.php on line 35.
+ 1 APPPATH\Controllers\CustomerAuthController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\app\\Controllers\\CustomerAuthController.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CustomerAuthController->loginMobile()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerAuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+ERROR - 2023-04-24 10:33:18 --> mysqli_sql_exception: Illegal parameter data types int and row for operation '=' in D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\app\Controllers\DriverAuthController.php(35): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(934): App\Controllers\DriverAuthController->loginMobile()
+#8 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+#9 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-04-24 10:33:18 --> Illegal parameter data types int and row for operation '='
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `ypc_users`
+WHERE `mobile` = \'+911234567898\'
+AND `role_id` = (\'7\',\'Driver\',NULL,NULL)
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `ypc_users`
+WHERE `mobile` = \'+911234567898\'
+AND `role_id` = (\'7\',\'Driver\',NULL,NULL)
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `ypc_users`
+WHERE `mobile` = \'+911234567898\'
+AND `role_id` = (\'7\',\'Driver\',NULL,NULL)
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ypc_users`
+WHERE `mobile` = :mobile:
+AND `role_id` = :role_id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\DriverAuthController.php(35): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->loginMobile()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+ERROR - 2023-04-24 12:01:45 --> mysqli_sql_exception: Duplicate entry 'demo3@gmail.com' for key 'users_email_unique' in D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `yp...', 0)
+#1 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `yp...')
+#2 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `yp...')
+#3 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `yp...', Array, false)
+#4 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\app\Controllers\DriverAuthController.php(173): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(934): App\Controllers\DriverAuthController->updateBasicInformation()
+#9 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+#10 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\your-price-cab-backend\ycab\ylocab4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-04-24 12:01:45 --> Duplicate entry 'demo3@gmail.com' for key 'users_email_unique'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ypc_users` (`fullname`, `mobile`, `email`, `role_id`) VALUES (\'test full name\', \'+911234567802\', \'demo3@gmail.com\', \'7\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ypc_users` (`fullname`, `mobile`, `email`, `role_id`) VALUES (\'test full name\', \'+911234567802\', \'demo3@gmail.com\', \'7\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ypc_users` (`fullname`, `mobile`, `email`, `role_id`) VALUES (\'test full name\', \'+911234567802\', \'demo3@gmail.com\', \'7\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ypc_users` (`fullname`, `mobile`, `email`, `role_id`) VALUES (:fullname:, :mobile:, :email:, :role_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DriverAuthController.php(173): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->updateBasicInformation()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-24 12:46:18 --> Cannot redeclare App\Controllers\DriverAuthController::updateBasicInformation()
+in APPPATH\Controllers\DriverAuthController.php on line 188.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-04-24 13:03:59 --> Undefined property: App\Controllers\DriverAuthController::$load
+in APPPATH\Controllers\DriverAuthController.php on line 225.
+ 1 APPPATH\Controllers\DriverAuthController.php(225): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\DriverAuthController::$load', 'D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\app\\Controllers\\DriverAuthController.php', 225)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->updateSelfiDetails()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-24 13:06:32 --> Encrypter needs a starter key.
+in SYSTEMPATH\Encryption\Encryption.php on line 124.
+ 1 SYSTEMPATH\Encryption\Encryption.php(124): CodeIgniter\Encryption\Exceptions\EncryptionException::forNeedsStarterKey()
+ 2 SYSTEMPATH\Config\Services.php(242): CodeIgniter\Encryption\Encryption->initialize(Object(Config\Encryption))
+ 3 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::encrypter()
+ 4 APPPATH\Controllers\DriverAuthController.php(225): CodeIgniter\Config\BaseService::__callStatic('encrypter', [])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->updateSelfiDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-24 13:06:33 --> Encrypter needs a starter key.
+in SYSTEMPATH\Encryption\Encryption.php on line 124.
+ 1 SYSTEMPATH\Encryption\Encryption.php(124): CodeIgniter\Encryption\Exceptions\EncryptionException::forNeedsStarterKey()
+ 2 SYSTEMPATH\Config\Services.php(242): CodeIgniter\Encryption\Encryption->initialize(Object(Config\Encryption))
+ 3 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::encrypter()
+ 4 APPPATH\Controllers\DriverAuthController.php(225): CodeIgniter\Config\BaseService::__callStatic('encrypter', [])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->updateSelfiDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-24 13:06:35 --> Encrypter needs a starter key.
+in SYSTEMPATH\Encryption\Encryption.php on line 124.
+ 1 SYSTEMPATH\Encryption\Encryption.php(124): CodeIgniter\Encryption\Exceptions\EncryptionException::forNeedsStarterKey()
+ 2 SYSTEMPATH\Config\Services.php(242): CodeIgniter\Encryption\Encryption->initialize(Object(Config\Encryption))
+ 3 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::encrypter()
+ 4 APPPATH\Controllers\DriverAuthController.php(225): CodeIgniter\Config\BaseService::__callStatic('encrypter', [])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->updateSelfiDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-24 13:07:16 --> Encrypter needs a starter key.
+in SYSTEMPATH\Encryption\Encryption.php on line 124.
+ 1 SYSTEMPATH\Encryption\Encryption.php(124): CodeIgniter\Encryption\Exceptions\EncryptionException::forNeedsStarterKey()
+ 2 SYSTEMPATH\Config\Services.php(242): CodeIgniter\Encryption\Encryption->initialize(Object(Config\Encryption))
+ 3 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::encrypter()
+ 4 APPPATH\Controllers\DriverAuthController.php(224): CodeIgniter\Config\BaseService::__callStatic('encrypter', [])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->updateSelfiDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-24 13:07:44 --> Encrypter needs a starter key.
+in SYSTEMPATH\Encryption\Encryption.php on line 124.
+ 1 SYSTEMPATH\Encryption\Encryption.php(124): CodeIgniter\Encryption\Exceptions\EncryptionException::forNeedsStarterKey()
+ 2 SYSTEMPATH\Config\Services.php(242): CodeIgniter\Encryption\Encryption->initialize(Object(Config\Encryption))
+ 3 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::encrypter()
+ 4 APPPATH\Controllers\DriverAuthController.php(224): CodeIgniter\Config\BaseService::__callStatic('encrypter', [])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->updateSelfiDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-24 13:07:46 --> Encrypter needs a starter key.
+in SYSTEMPATH\Encryption\Encryption.php on line 124.
+ 1 SYSTEMPATH\Encryption\Encryption.php(124): CodeIgniter\Encryption\Exceptions\EncryptionException::forNeedsStarterKey()
+ 2 SYSTEMPATH\Config\Services.php(242): CodeIgniter\Encryption\Encryption->initialize(Object(Config\Encryption))
+ 3 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::encrypter()
+ 4 APPPATH\Controllers\DriverAuthController.php(224): CodeIgniter\Config\BaseService::__callStatic('encrypter', [])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->updateSelfiDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-24 13:50:35 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 762.
+ 1 SYSTEMPATH\BaseModel.php(762): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\DriverAuthController.php(250): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->updateSelfiDetails()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-24 13:51:39 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 762.
+ 1 SYSTEMPATH\BaseModel.php(762): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\DriverAuthController.php(249): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->updateSelfiDetails()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-24 13:53:01 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 762.
+ 1 SYSTEMPATH\BaseModel.php(762): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\DriverAuthController.php(250): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->updateSelfiDetails()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-24 13:53:57 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 762.
+ 1 SYSTEMPATH\BaseModel.php(762): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\DriverAuthController.php(252): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->updateSelfiDetails()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-24 13:55:24 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 762.
+ 1 SYSTEMPATH\BaseModel.php(762): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\DriverAuthController.php(253): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->updateSelfiDetails()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-24 14:04:09 --> Cannot use object of type App\Models\DriverDocuments as array
+in APPPATH\Controllers\DriverAuthController.php on line 273.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->updateSelfiDetails()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-24 14:04:34 --> Cannot use object of type App\Models\DriverDocuments as array
+in APPPATH\Controllers\DriverAuthController.php on line 273.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->updateSelfiDetails()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-24 14:04:35 --> Cannot use object of type App\Models\DriverDocuments as array
+in APPPATH\Controllers\DriverAuthController.php on line 273.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->updateSelfiDetails()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
+CRITICAL - 2023-04-24 14:33:05 --> The framework needs the following extension(s) installed and loaded: "GD".
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 54.
+ 1 SYSTEMPATH\Images\Handlers\GDHandler.php(34): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('GD')
+ 2 SYSTEMPATH\Config\Services.php(341): CodeIgniter\Images\Handlers\GDHandler->__construct(Object(Config\Images))
+ 3 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::image('gd', Object(Config\Images), false)
+ 4 SYSTEMPATH\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('image', [...])
+ 5 SYSTEMPATH\Config\Services.php(332): CodeIgniter\Config\BaseService::getSharedInstance('image', null, null)
+ 6 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::image()
+ 7 APPPATH\Controllers\DriverAuthController.php(320): CodeIgniter\Config\BaseService::__callStatic('image', [])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DriverAuthController->updateSelfiDetails()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DriverAuthController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\your-price-cab-backend\\ycab\\ylocab4\\public\\index.php')
